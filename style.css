@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500&display=swap');
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff0157;
+  border-radius: 2rem;
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #ffdfe9;
+  color: #ff0156;
+  letter-spacing: 2.4px;
+}
+
+.btn-user {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-sign-up {
+  background-color: #fff;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
+}
+
+.btn-login {
+  background-color: #fff;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
+}
+
+/* main */
+
+/* navbar section */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(131, 51, 51, 0.3);
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header.sticky .logo {
+  color: #062e32;
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .navbar {
+  position: relative;
+  display: flex;
+}
+
+header .navbar li {
+  list-style: none;
+  margin-left: 55px;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header.sticky .navbar li a {
+  color: #062e32;
+}
+
+header .navbar li a:hover {
+  color: #ff0157;
+  transition: 0.5s;
+}
+
+/* home section*/
+
+.home {
+  position: relative;
+  height: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url('src/img/home_bg.jpg');
+  background-size: cover;
+}
+
+.home .home-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.home .home-content h3 {
+  font-size: 5em;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.home .home-content p {
+  font-size: 1em;
+  color: #fff;
+}
